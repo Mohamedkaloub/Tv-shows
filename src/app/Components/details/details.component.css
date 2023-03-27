@@ -1,0 +1,18 @@
+.tv_details{
+    margin-top:100px ;
+}
+.container-back{
+    background-color: #1A1A1A;
+    color: aliceblue;
+}
+.link{
+    text-decoration: none;
+}
+.link:hover{
+    text-decoration:underline;
+}
+.circle-img {
+    border-radius: 50%;
+    width: 100px; /* You can adjust this value to fit your needs */
+    height: 100px; /* You can adjust this value to fit your needs */
+  }

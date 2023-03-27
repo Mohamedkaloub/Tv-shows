@@ -1,0 +1,51 @@
+ <app-hmain></app-hmain> 
+<div class="container">
+    <h3>The Top Rate</h3>
+    <owl-carousel-o [options]="customOptions">
+        
+      <ng-template carouselSlide *ngFor="let x of tv_toprate">
+         <div class="m-2 size rounded">
+            <img class="rounded" src="https://www.themoviedb.org/t/p/w220_and_h330_face{{x.poster_path}}" alt=""> 
+            <a class="link" [routerLink]="['/details/',x.id]">
+                <h6 style="color: #ffff;" >{{x.name}}</h6>
+            </a>   
+        </div>
+     </ng-template>  
+       
+    </owl-carousel-o>
+</div>
+<div class="container">
+    <h3>The Top Rate</h3>
+    <owl-carousel-o [options]="customOptions">
+        
+      <ng-template carouselSlide *ngFor="let x of tv_popular">
+         <div class="m-2 size rounded">
+        <img class="rounded" src="https://www.themoviedb.org/t/p/w220_and_h330_face{{x.poster_path}}" alt="no imge"> 
+        <a class="link" [routerLink]="['/details/',x.id]">
+            <h6 style="color: #ffff;" >{{x.name}}</h6>
+        </a>
+    </div>
+     </ng-template>  
+       
+    </owl-carousel-o>
+</div>
+<div class="container">
+    <h3>The OnAir</h3>
+    <owl-carousel-o [options]="customOptions">
+        
+      <ng-template carouselSlide *ngFor="let x of tv_OnAir">
+         <div class="m-2 size rounded">
+        <img class="rounded" src="https://www.themoviedb.org/t/p/w220_and_h330_face{{x.poster_path}}" alt="no imge"> 
+        <a class="link" [routerLink]="['/details/',x.id]">
+            <h6 style="color: #ffff;" >{{x.name}}</h6>
+        </a>
+    </div>
+     </ng-template>  
+       
+    </owl-carousel-o>
+</div>
+
+    
+        
+
+

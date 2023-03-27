@@ -1,0 +1,11 @@
+<div class="container mt-5">
+
+    <owl-carousel-o [options]="customOptions">
+      
+      <ng-template  carouselSlide *ngFor="let x of airing_today"> 
+       <img class="rounded" src="https://www.themoviedb.org/t/p/w220_and_h330_face{{x.poster_path}}" alt="" style="height: 500px;">
+    </ng-template>  
+   
+     
+    </owl-carousel-o>
+</div>
